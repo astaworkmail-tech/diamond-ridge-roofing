@@ -1,2 +1,2 @@
-var f=document.getElementById('leadForm');
-if(f){f.addEventListener('submit',function(e){e.preventDefault();f.style.display='none';document.getElementById('okMsg').style.display='block';});}
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('[data-rise]').forEach((el,i)=>{el.style.transitionDelay=(i%4*60)+'ms';io.observe(el);});
