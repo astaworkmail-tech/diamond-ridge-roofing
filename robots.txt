@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://astaworkmail-tech.github.io/diamond-ridge-roofing/sitemap.xml
