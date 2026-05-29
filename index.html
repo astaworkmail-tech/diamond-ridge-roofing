@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/diamond-ridge-roofing/">
+<!-- BASE:END -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Archivo+Black&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+
+<!-- SEO Meta Tags -->
+<title>Diamond Ridge Roofing | Oklahoma Storm &amp; Insurance Claim Roofers</title>
+<meta name="description" content="The storm hit. We handle the claim. Free roof inspections across OKC, Edmond, Norman &amp; Moore." />
+<meta name="keywords" content="Oklahoma roof insurance claims" />
+<meta property="og:title" content="Diamond Ridge Roofing | Oklahoma Storm &amp; Insurance Claim Roofers" />
+<meta property="og:description" content="The storm hit. We handle the claim. Free roof inspections across OKC, Edmond, Norman &amp; Moore." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Diamond Ridge Roofing | Oklahoma Storm &amp; Insurance Claim Roofers" />
+<meta name="twitter:description" content="The storm hit. We handle the claim. Free roof inspections across OKC, Edmond, Norman &amp; Moore." />
+<!-- End SEO Meta Tags -->
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4411');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='xgVzceM';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="brand" href="#top">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M3 11L12 4l9 7" stroke="#0E1116" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v9h14v-9" stroke="#0E1116" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span><b>DIAMOND RIDGE</b><span>Roofing &amp; Restoration</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#claim">The Claim Process</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#quote">Free Inspection</a>
+    </div>
+    <a class="nav-cta" href="tel:4056742047">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z" stroke="#0E1116" stroke-width="2"/></svg>
+      (405) 674-2047
+    </a>
+  </nav>
+</header>
+<section class="hero" id="top">
+  <video autoplay muted loop playsinline>
+    <source src="https://paymegpt.com/api/gemini/proxy-video?url=https%3A%2F%2Fgenerativelanguage.googleapis.com%2Fv1beta%2Ffiles%2F5bml19v0vrt4%3Adownload%3Falt%3Dmedia&userId=21" type="video/mp4">
+  </video>
+  <div class="veil"></div>
+  <div class="hero-inner">
+    <div class="label">Oklahoma Storm &amp; Insurance Claim Specialists</div>
+    <h1>The storm hit.<br>We handle <span class="em">the claim.</span></h1>
+    <p class="lede">Hail and high winds don't wait &mdash; and neither should you. Diamond Ridge inspects the damage, fights your insurance claim, and rebuilds your roof. You pick the shingle color. We do everything else.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#quote">Book a free inspection
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#0E1116" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="#claim">How the claim works</a>
+      <div class="hero-phone"><small>Storm damage now?</small><a href="tel:4056742047">(405) 674-2047</a></div>
+    </div>
+  </div>
+</section>
+<div class="ticker">
+  <div class="track">
+    <span>Hail Damage&nbsp;&nbsp;Wind &amp; Storm Restoration&nbsp;&nbsp;Insurance Claim Support&nbsp;&nbsp;Roof Replacement&nbsp;&nbsp;Gutters &amp; Siding&nbsp;&nbsp;Free Inspections&nbsp;&nbsp;Oklahoma City&nbsp;&nbsp;Edmond&nbsp;&nbsp;Norman&nbsp;&nbsp;Moore&nbsp;&nbsp;</span>
+    <span>Hail Damage&nbsp;&nbsp;Wind &amp; Storm Restoration&nbsp;&nbsp;Insurance Claim Support&nbsp;&nbsp;Roof Replacement&nbsp;&nbsp;Gutters &amp; Siding&nbsp;&nbsp;Free Inspections&nbsp;&nbsp;Oklahoma City&nbsp;&nbsp;Edmond&nbsp;&nbsp;Norman&nbsp;&nbsp;Moore&nbsp;&nbsp;</span>
+  </div>
+</div>
+<section class="claim" id="claim">
+  <div class="wrap">
+    <div data-rise>
+      <div class="label" style="margin-bottom:16px">A roof claim, handled right</div>
+      <h2>Most homeowners leave money on the roof. <span class="em">We don't let that happen.</span></h2>
+      <p class="body" style="margin-top:20px">Insurance carriers don't make it easy &mdash; missed damage, lowball estimates, denied scopes. We've spent years on Oklahoma roofs and on the phone with adjusters. <strong>We document every dent, meet your adjuster on-site, and make sure the claim covers what the storm actually did.</strong> Then we rebuild it.</p>
+    </div>
+    <div class="steps" data-rise>
+      <div class="step"><div class="no">01</div><div><h4>Free storm inspection</h4><p>A seasoned field inspector checks your roof, siding, windows and gutters &mdash; no cost, no pressure.</p></div></div>
+      <div class="step"><div class="no">02</div><div><h4>We meet your adjuster</h4><p>We're on the roof with your insurance adjuster so nothing legitimate gets overlooked or written off.</p></div></div>
+      <div class="step"><div class="no">03</div><div><h4>Claim approved &amp; scoped</h4><p>We handle the paperwork and the back-and-forth. You stay informed, not buried in forms.</p></div></div>
+      <div class="step"><div class="no">04</div><div><h4>Installed. Done right.</h4><p>Clean, code-correct installation. The hardest call you'll make is which shingle color you want.</p></div></div>
+    </div>
+  </div>
+</section>
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head" data-rise>
+      <h2>Everything the weather can throw at a roof</h2>
+      <p>From a single hail strike to a full tear-off and replacement &mdash; one local crew, corner to corner across Oklahoma.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="card feature" data-rise>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 16l4-7 3 4 4-8 4 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 20h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <div><span class="tag">Our specialty</span>
+        <h3>Storm &amp; Hail Restoration</h3>
+        <p>Hail bruising, wind-lifted shingles, a tree through the decking &mdash; we survey the full envelope of damage and restore it to better than it was. This is the work we know cold.</p></div>
+      </div>
+      <div class="card tall" data-rise>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 10l8-6 8 6v9a1 1 0 01-1 1H5a1 1 0 01-1-1z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 20v-6h6v6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+        <h3>Full Roof Replacement</h3>
+        <p>Six roofing compositions, from architectural asphalt to environmentally-friendly options &mdash; walked through with you, then installed by a crew that respects your property.</p>
+      </div>
+      <div class="card wide" data-rise>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 7h18M5 7v12M19 7v12M3 19h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Repairs &amp; Upkeep</h3>
+        <p>Catch the small leak before it's a ceiling. Honest repair work that buys your roof real years.</p>
+      </div>
+      <div class="card std" data-rise>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 8h16l-2 11H6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M4 8l2-3h12l2 3" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+        <h3>Gutters &amp; Siding</h3>
+        <p>The rest of your home's weather shell, matched and restored alongside the roof.</p>
+      </div>
+      <div class="card std" data-rise>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+        <h3>Claim Documentation</h3>
+        <p>Photographed, measured, itemized. The proof your insurer needs to say yes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="band" data-rise>
+  <div class="wrap">
+    <div class="stat"><div class="n">Free</div><div class="l">Roof Inspections</div></div>
+    <div class="stat"><div class="n">4</div><div class="l">Metro Areas Served</div></div>
+    <div class="stat"><div class="n">6</div><div class="l">Roofing Compositions</div></div>
+    <div class="stat"><div class="n">Local</div><div class="l">Oklahoma Owned</div></div>
+  </div>
+</section>
+<section class="why" id="why">
+  <div class="wrap">
+    <div data-rise>
+      <div class="label" style="margin-bottom:16px">Why Diamond Ridge</div>
+      <h2>A local roofer who<br>actually <span class="em">picks up.</span></h2>
+      <div class="body">
+        <p>Your roof is the one thing standing between an Oklahoma sky and your family. When it fails, you don't want a call center three states away &mdash; you want the crew that knows this weather.</p>
+        <p>We're Oklahoma-owned, we serve from corner to corner, and we treat the insurance side as our job, not yours.</p>
+      </div>
+    </div>
+    <div class="checks" data-rise>
+      <div class="check"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>We deal with the insurer</b><span>On-site with your adjuster, fighting for the full scope of legitimate storm damage.</span></div></div>
+      <div class="check"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Seasoned field inspectors</b><span>People who've walked thousands of Oklahoma roofs and know what hail really does.</span></div></div>
+      <div class="check"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>One easy decision for you</b><span>We make the process so simple the hardest part is choosing your shingle color.</span></div></div>
+      <div class="check"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>From corner to corner</b><span>Oklahoma City, Edmond, Norman, Moore and the surrounding communities.</span></div></div>
+    </div>
+  </div>
+</section>
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div class="quote-box" data-rise>
+      <div class="quote-left">
+        <h2>Get your <span class="em">free</span> roof inspection</h2>
+        <p>Storm rolled through? Don't wait for the leak to show up. Tell us where you are and one of our inspectors will reach out &mdash; fast.</p>
+        <div class="call"><small>Or call us right now</small><a href="tel:4056742047">(405) 674-2047</a></div>
+      </div>
+      <div class="quote-form">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your full name" required></div>
+        <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(405) 000-0000" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@email.com"></div>
+        <div class="field"><label for="city">City</label>
+          <select id="city" name="city">
+            <option>Oklahoma City</option><option>Edmond</option><option>Norman</option><option>Moore</option><option>Other / nearby</option>
+          </select>
+        </div>
+        <div class="field"><label for="msg">What happened to the roof?</label><textarea id="msg" name="message" rows="2" placeholder="Hail, wind, leak, age..."></textarea></div>
+        <button class="btn btn-primary" type="button" onclick="this.textContent='Thanks - we will be in touch!';this.disabled=true;">Request my free inspection</button>
+        <div class="formnote">No obligation. We respond to storm-damage requests fast.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top" style="color:var(--text)">
+          <span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M3 11L12 4l9 7" stroke="#0E1116" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v9h14v-9" stroke="#0E1116" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span><b>DIAMOND RIDGE</b><span>Roofing &amp; Restoration</span></span>
+        </a>
+        <p>Oklahoma's storm &amp; insurance-claim roofing specialists. Serving homeowners from corner to corner.</p>
+      </div>
+      <div>
+        <h5>Visit / Call</h5>
+        <a href="https://maps.google.com/?q=2524+N.+Moore+Ave.+Moore+OK+73160" target="_blank">2524 N. Moore Ave.<br>Moore, OK 73160</a>
+        <a href="tel:4056742047">(405) 674-2047</a>
+      </div>
+      <div>
+        <h5>Follow</h5>
+        <a href="https://www.facebook.com/102421742453244" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/diamondridgeroofing" target="_blank">Instagram</a>
+        <a href="#quote">Free Inspection</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2016-2026 Diamond Ridge Roofing &amp; Restoration. All Rights Reserved.</span>
+      <span>Hail &middot; Wind &middot; Storm Restoration &middot; Insurance Claims</span>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
